@@ -10,9 +10,9 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    let audioEngine = AVAudioEngine()               //エンジンの生成
+    let audioEngine = AVAudioEngine()               //AudioEngineの生成
     let playerNode = AVAudioPlayerNode()            //playerの作成
-    var session = AVAudioSession.sharedInstance()   //アプリでオーディオをどのように使用するかをシステムに伝えるオブジェクト
+    let session = AVAudioSession.sharedInstance()   //アプリでオーディオをどのように使用するかをシステムに伝えるオブジェクト
 
     override func viewDidLoad() {
         super.viewDidLoad()
